@@ -9,6 +9,13 @@ public class HourlyEmployee extends HRService implements Employee{
     private String lastName;
     private int employeeSSN;
     private double yearlySalary;
+    private double biweeklyHoursWorked;
+    private double hourlyWage;
+    private static final double PAY_WEEKS = 26;
+
+    public HourlyEmployee() {
+    }
+    
 
     @Override
     public String getFirstName() {
@@ -39,6 +46,7 @@ public class HourlyEmployee extends HRService implements Employee{
 
     @Override
     public double getYearlySalary() {
+        yearlySalary = hourlyWage * biweeklyHoursWorked * PAY_WEEKS;
         return yearlySalary;
     }
 

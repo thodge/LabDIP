@@ -45,6 +45,7 @@ public class SalariedPlusBonusEmployee extends HRService implements Employee{
 
     @Override
     public double getYearlySalary() {
+        yearlySalary = biweeklySalary * PAY_WEEKS;
         return yearlySalary;
     }
 
