@@ -8,6 +8,10 @@ import java.text.NumberFormat;
  */
 public class Startup {
     
+    public static void main(String[] args) {
+        
+    
+    
             //Low-level modules
         Employee emp1 = new HourlyEmployee(10.50);
         Employee emp2 = new SalariedEmployee(5000);
@@ -25,9 +29,10 @@ public class Startup {
 
         // Test input/output by looping over collection in a way that
         // doesn't break if we add/subtract employees from array
-        for(int i=0; i < employees.length; i++) {
+        for(int i = 0; i < employees.length; i++) {
             System.out.println("Employee " + (i+1) + " compensation:" +
             nf.format(hr.getYearlyWage(employees[i])));
         }
+    }
     
 }
