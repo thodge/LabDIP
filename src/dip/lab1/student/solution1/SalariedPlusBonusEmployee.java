@@ -4,11 +4,11 @@ package dip.lab1.student.solution1;
  *
  * @author Tammie
  */
-public class SalariedPlusBonusEmployee extends HRService implements Employee{
+public class SalariedPlusBonusEmployee implements Employee{
     private String firstName;
     private String lastName;
     private int employeeSSN;
-    private double yearlySalary;
+    private double yearlyWage;
     private double biweeklySalary;
     private static final double PAY_WEEKS = 26;
     private double yearlyBonus;
@@ -44,13 +44,13 @@ public class SalariedPlusBonusEmployee extends HRService implements Employee{
     }
 
     @Override
-    public double getYearlySalary() {
-        yearlySalary = biweeklySalary * PAY_WEEKS;
-        return yearlySalary;
+    public double getYearlyWage() {
+        yearlyWage = biweeklySalary * PAY_WEEKS;
+        return yearlyWage;
     }
 
-    public void setYearlySalary(double yearlySalary) {
-        this.yearlySalary = yearlySalary;
+    public void setYearlyWage(double yearlyWage) {
+        this.yearlyWage = yearlyWage;
     }
 
     public double getBiweeklySalary() {
