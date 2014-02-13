@@ -13,4 +13,8 @@ public class FoodTipCalculator implements TipCalculatorStrategy {
     private static final double FAIR_RATE = 0.15;
     private static final double POOR_RATE = 0.10;
 
+    public FoodTipCalculator() {
+    }
+
+    
 }

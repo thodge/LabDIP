@@ -4,7 +4,7 @@ package dip.lab1.student.solution1;
  *
  * @author Tammie
  */
-public class SalariedEmployee extends HRService implements Employee {
+public class SalariedEmployee implements Employee {
     private String firstName;
     private String lastName;
     private int employeeSSN;
@@ -12,8 +12,10 @@ public class SalariedEmployee extends HRService implements Employee {
     private double biweeklySalary;
     private static final double PAY_WEEKS = 26;
 
-    public SalariedEmployee() {
+    public SalariedEmployee(double biweeklySalary) {
+        setBiweeklySalary(biweeklySalary);
     }
+    
     
     @Override
     public String getFirstName() {

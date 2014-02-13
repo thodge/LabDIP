@@ -6,10 +6,10 @@ package dip.lab1.student.solution1;
  * @author Tammie
  */
 public interface Employee {
-    public String getFirstName();
-    public String getLastName();
-    public int getEmployeeSSN();
-    public double getYearlySalary();
+    public abstract String getFirstName();
+    public abstract String getLastName();
+    public abstract int getEmployeeSSN();
+    public abstract double getYearlyWage();
     
     
 }

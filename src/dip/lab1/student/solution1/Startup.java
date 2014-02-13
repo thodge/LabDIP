@@ -13,7 +13,7 @@ public class Startup {
     
     
             //Low-level modules
-        Employee emp1 = new HourlyEmployee(10.50);
+        Employee emp1 = new HourlyEmployee(10.50,40);
         Employee emp2 = new SalariedEmployee(5000);
        
         
